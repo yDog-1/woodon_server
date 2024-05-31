@@ -1,0 +1,18 @@
+services:
+  app:
+    image: "mcr.microsoft.com/devcontainers/go:1-1.22-bookworm"
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/app
+    command: /bin/bash
+    tty: true
+  db:
+    image: mariadb:latest
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: woodon
+      MARIADB_ROOT_PASSWORD: password
+    ports:
+      - "3306:3306"
