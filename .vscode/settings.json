@@ -5,11 +5,9 @@
     "[go]": {
         "editor.defaultFormatter": "golang.go"
     },
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
     // Test
     "go.testFlags": [
+        "./...",
         "-v",
         "-cover"
     ],
