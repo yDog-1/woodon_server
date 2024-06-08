@@ -26,3 +26,6 @@ func (db *DBcontext) CreateUser(u *ent.User) (*ent.User, error) {
 	}
 	return user, nil
 }
+
+func main() {
+}
