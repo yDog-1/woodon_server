@@ -7,7 +7,6 @@
     },
     // Test
     "go.testFlags": [
-        "./...",
         "-v",
         "-cover"
     ],
